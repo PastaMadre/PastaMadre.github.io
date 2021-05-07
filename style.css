@@ -110,10 +110,14 @@ section.sec1 {
  	 margin: 0;
   	padding: 0 }
 
-@media screen and (max-width:800px) {
-  body {
-    background-size: cover;
-    background-attachment:fixed }
+@media screen and (max-width:600px) {
+  section.sec1 {
+
+	 background-image: url(pastamadre2.jpg);
+	background-size: 100% auto;
+ 	 margin: 0;
+	  padding: 0 }
+
 }
  
 .content {
