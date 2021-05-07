@@ -107,7 +107,7 @@ section.sec1 {
 	 height : 50vh;
 	 background-image: url(pastamadre.jpg);
 	background-size: auto;
-	background-attachment: fixed;
+	
 	 background-position: center center;
  	 margin: 0;
   	padding: 0 }
