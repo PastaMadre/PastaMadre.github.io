@@ -107,19 +107,20 @@ section.sec1 {
 	 height : 100vh;
 	 background-image: url(pastamadre.jpg);
 	background-size: 100% auto;
+	background-attachment: fixed;
+	 background-position: center center;
  	 margin: 0;
   	padding: 0 }
 
 @media screen and (max-width:600px) {
   section.sec1 {
-	width: 100%;
-	 height : 50vh;
+	
 	 background-image: url(pastamadre2.jpg);
-	  background-attachment: fixed;
+	 background-attachment: fixed;
 	 background-position: center center;
-	background-size: 100% auto;
+	 background-size: 100% auto;
  	 margin: 0;
-	  padding: 0 }
+	 padding: 0 }
 
 }
  
