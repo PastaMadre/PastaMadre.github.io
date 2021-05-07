@@ -1,0 +1,80 @@
+<html> 
+<html> 
+<head>
+<meta charset ="utf-8"> 
+<title> Prenota Visita </title>
+<link rel ="stylesheet" style="text/css" href="style.css">
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"> </script>
+<script type="tetx/javascript">
+   $(window).on('scroll', function(){
+	if($(window).scrollTop()){
+		$('nav').addClass('black');
+	}
+	else{
+		$('nav').removeClass('black');
+		}
+})
+</script>
+<script language="javascript">
+
+function control(){
+
+var n = parseInt( document.prenotazione.nome.value);
+if(!isNaN(n)) {
+	alert("il nome deve contenere solo caratteri!");
+	return false;
+}
+return true;
+}
+
+</script>
+
+</head>
+<body class="prenota">
+<header> 
+<div class ="wrapper"> 
+<nav> 
+<div class="logo"> Logo </div> 
+<ul> 
+<li><a href="index.html"> Home </a></li> 
+<li><a href="chisiamo.html"> Chi siamo </a></li> 
+<li><a href="visita.html"> Visite </a></li> 
+<li><a href="contatti.html"> Contatti </a></li> 
+<li><a class="active" href="#"> Prenota Tavolo </a></li>
+</ul> 
+</nav> 
+</div>
+</header>
+<section>
+<form action="" method="POST" class="form_prenotazione" name="prenotazione">
+<h2 style="color:#000; font-family:Arial"> Prenota il tuo tavolo </h2>
+<strong> Nome </strong> <input type="text" name="nome" placeholder="Inserisci Nome" > 
+<strong> Cognome </strong>   <input type="text"  name="cognome" placeholder="Inserisci Cognome" > 
+<strong> Telefono </strong> <input type="text" name="telefono" placeholder="Inserisci Telefono" > 
+<strong> Email  </strong> <input type="email" name="email" placeholder="Inserisci Email" > 
+<strong> Quante persone siete? </strong> <br>
+<select required> 
+<option value="0"> - </option>
+<option value="1"> 1 </option>
+<option value="2"> 2 </option>
+<option value="3"> 3</option>
+<option value="4"> 4  </option>
+<option value="5"> 5 </option>
+<option value="6"> 6</option>
+<option value="7"> 7 </option>
+<option value="7"> 8 </option>
+<option value="7"> 9 </option>
+<option value="7"> 10 </option>
+</select> 
+<br> 
+<strong> Aggiungi un commento   </strong> <br>
+<textarea rows ="4" cols="50"/>
+</textarea>
+<br>
+<input type="Submit" value="Invia" onclick="javascript:control();">
+</form>
+
+</section>
+
+</body>
+</html>
